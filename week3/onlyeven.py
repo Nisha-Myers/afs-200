@@ -16,4 +16,5 @@ def onlyEven(num):
 
 chosenNum = int(input("Enter a positive even number: "))
 checkNum(chosenNum)
+
 #onlyEven(chosenNum)
