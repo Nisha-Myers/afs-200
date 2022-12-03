@@ -1,0 +1,38 @@
+a
+
+    4Œbñ  ã                   @   s    G d d„ dƒZ G dd„ dƒZdS )c                   @   sL   e Zd Zdd„ Zdd„ Zdd„ Zdd„ Zd	d
+„ Zdd„ Zd
+d„ Z	dd„ Z
+dS )ÚContactc                 C   s"   || _ || _|| _|| _|| _d S ©N)ÚfnameÚlnameÚemailÚnumberÚphoto)Úselfr   r   r   r   r   © r	   úUc:\users\kyle\desktop\school\classes\afs-200\afs-200\week5\addressbook\addressbook.pyÚ__init__   s
+    zContact.__init__c                 C   s   t | jƒ d S r   )Úprintr   ©r   r	   r	   r
+   ÚgetFirstName	   s    zContact.getFirstNamec                 C   s   t | jƒ d S r   )r   r   r
+   r	   r	   r
+   ÚgetLastName   s    zContact.getLastNamec                 C   s   t | jƒ d S r   )r   r   r
+   r	   r	   r
+   ÚgetEmail   s    zContact.getEmailc                 C   s   t | jƒ d S r   )r   r   r
+   r	   r	   r
+   Ú	getNumber   s    zContact.getNumberc                 C   s   t | jƒ d S r   )r   r   r
+   r	   r	   r
+   ÚgetPhoto   s    zContact.getPhotoc                 C   s   | j › d| j› d| j› dS ©Nú z (ú)©r   r   r   r
+   r	   r	   r
+   Ú__str__   s    zContact.__str__c                 C   s   | j › d| j› d| j› dS r   r   r
+   r	   r	   r
+   Ú__repr__   s    zContact.__repr__N)Ú__name__Ú
+__module__Ú__qualname__r   r   r   r   r   r   r   r   r	   r	   r	   r
+   r      s   r   c                   @   s,   e Zd Zdd„ Zdd„ Zdd„ Zdd„ Zd	S )
+ÚAddressBookc                 C   s
+   g | _ d S r   ©Ú	addressesr
+   r	   r	   r
+   r       s    zAddressBook.__init__c                 C   s   | j  |¡ d S r   )r   Úappend)r   Úaddressr	   r	   r
+   Ú
+addAddress#   s    zAddressBook.addAddressc                 C   s   | j S r   r   r
+   r	   r	   r
+   ÚgetAllAddresses&   s    zAddressBook.getAllAddressesc                 C   sJ   g }| j D ]:}| ¡  ¡  | ¡ ¡s:| ¡  ¡  | ¡ ¡r
+| |¡ q
+|S r   )r   r   ÚlowerÚ
+startswithr   r   )r   Ú	searchStrÚresultsr    r	   r	   r
+   ÚfindAllMatching)   s
+    
+,zAddressBook.findAllMatchingN)r   r   r   r   r!   r"   r'   r	   r	   r	   r
+   r      s   r   N)r   r   r	   r	   r	   r
+   Ú<module>   s   
