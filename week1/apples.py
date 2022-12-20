@@ -1,5 +1,5 @@
 applePrice = .50
-userPrompt = "Please state your name: "
+userPrompt = "Please enter your name: "
 applePrompt = "How many apples would you like to buy?: "
 thankYou = "Thank you for your purchase."
 username = input(userPrompt)

@@ -1,22 +1,0 @@
-a
-
-    ðŒbð  ã                	   @   sâ   d dl mZmZmZmZ d dlZd dlZd dl mZ eeƒZ	dd„ Z
-e ¡ Ze
-ƒ Z
-e
-d D ]@Ze ed d ed d	 ed
- ed ed d
- ¡Ze e¡ qZe	jddgddd„ ƒZe	jdddgddd„ ƒZedkrÞe	 ¡  dS )é    )ÚFlaskÚrender_templateÚjsonÚjsonifyN)Úrequestc               
-   C   sè   d} z$t j| dd}| ¡  | ¡ }|W S  t jjyX } zt|ƒ W Y d }~n”d }~0  t jjy† } zt|ƒ W Y d }~nfd }~0  t jjy´ } zt|ƒ W Y d }~n8d }~0  t jj	yâ } zt|ƒ W Y d }~n
-d }~0 0 d S )Nz,https://randomuser.me/api/?results=25&nat=usé   )Útimeout)
-ÚrequestsÚgetZraise_for_statusr   Ú
-exceptionsÚ	HTTPErrorÚprintÚConnectionErrorZTimeoutZRequestException)ÚURLÚresponseÚdataZerrhZerrcZerrtÚerr© r   úMc:\users\kyle\desktop\school\classes\afs-200\afs-200\week5\addressbook\app.pyÚgetData	   s    r   ÚresultsÚnameÚfirstÚlastÚemailZphoneZpictureZmediumú/ÚGET)Úmethodsc                   C   s   t dt ¡ dS )Nú
-index.html©Z	addresses)r   Ú
-myAddressBookZgetAllAddressesr   r   r   r   ÚrawData%   s    r!   z/searchÚPOSTc                  C   s(   t jdkrt j d¡} tdt | ¡dS )Nr"   Úsearchr   r   )r   ÚmethodÚformr
-   r   r    ZfindAllMatching)Z	searchStrr   r   r   r#   ,   s    
-r#   Ú__main__)Zflaskr   r   r   r   r	   Úaddressbookr   Ú__name__Úappr   ZAddressBookr    ZjsonAddressDataZcontactsZContactZnewContactsZ
-addAddressÚrouter!   r#   Úrunr   r   r   r   Ú<module>   s*   
-
-ü
-
-
