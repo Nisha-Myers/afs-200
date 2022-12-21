@@ -8,6 +8,7 @@ app = Flask(__name__)
 
 def getData():
     URL = 'https://randomuser.me/api/?results=25&nat=us'
+    
     try:
         response = requests.get(URL, timeout = 5)
         response.raise_for_status()

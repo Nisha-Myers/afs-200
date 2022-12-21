@@ -1,5 +1,6 @@
 import requests
 
+
 class User():
     def __init__(self, firstName, lastName, email, username, password, uuid):
         self.firstName = firstName
@@ -8,6 +9,7 @@ class User():
         self.username = username
         self.password = password
         self.uuid = uuid
+        
     def __str__(self):
         return f'{self.firstName} {self.lastName} ({self.email})'
     def getFirstName(self):
